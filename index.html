@@ -4,10 +4,103 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <title>
+      BrainPad | Type as you think. Quick, smart, clean note storage
+    </title>
+    <script type="module" src="/main.js" defer></script>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <main class="app">
+      <section class="app__left-section">
+        <button type="text" class="app__left-section__button">Add Note</button>
+        <aside class="app__left-section__notes-list">
+          <div class="app__left-section__notes-list__note-item">
+            <div class="app__left-section__notes-list__note-item__top">
+              <div class="app__left-section__notes-list__note-item__top__title">Test title</div>
+              <div class="app__left-section__notes-list__note-item__top__delete">
+                <img src="/bin.svg" alt="A bin icon" class="app__left-section__notes-list__note-item__top__delete__icon"></img>
+            </div>
+            </div>
+            <div
+              class="app__left-section__notes-list__note-item__snippet"
+            >Test description</div>
+            <div class="app__left-section__notes-list__note-item__date">Thurs, 03, 2022</div>
+          </div>
+          <div class="app__left-section__notes-list__note-item">
+            <div class="app__left-section__notes-list__note-item__top">
+              <div class="app__left-section__notes-list__note-item__top__title">Test title</div>
+              <div class="app__left-section__notes-list__note-item__top__delete">
+                <img src="/bin.svg" alt="A bin icon" class="app__left-section__notes-list__note-item__top__delete__icon"></img>
+            </div>
+            </div>
+            <div
+              class="app__left-section__notes-list__note-item__snippet"
+            >Test description</div>
+            <div class="app__left-section__notes-list__note-item__date">Thurs, 03, 2022</div>
+          </div>
+          <div class="app__left-section__notes-list__note-item">
+            <div class="app__left-section__notes-list__note-item__top">
+              <div class="app__left-section__notes-list__note-item__top__title">Test title</div>
+              <div class="app__left-section__notes-list__note-item__top__delete">
+                <img src="/bin.svg" alt="A bin icon" class="app__left-section__notes-list__note-item__top__delete__icon"></img>
+            </div>
+            </div>
+            <div
+              class="app__left-section__notes-list__note-item__snippet"
+            >Test description</div>
+            <div class="app__left-section__notes-list__note-item__date">Thurs, 03, 2022</div>
+          </div>
+          <div class="app__left-section__notes-list__note-item">
+            <div class="app__left-section__notes-list__note-item__top">
+              <div class="app__left-section__notes-list__note-item__top__title">Test title</div>
+              <div class="app__left-section__notes-list__note-item__top__delete">
+                <img src="/bin.svg" alt="A bin icon" class="app__left-section__notes-list__note-item__top__delete__icon"></img>
+            </div>
+            </div>
+            <div
+              class="app__left-section__notes-list__note-item__snippet"
+            >Test description</div>
+            <div class="app__left-section__notes-list__note-item__date">Thurs, 03, 2022</div>
+          </div>
+          <div class="app__left-section__notes-list__note-item">
+            <div class="app__left-section__notes-list__note-item__top">
+              <div class="app__left-section__notes-list__note-item__top__title">Test title</div>
+              <div class="app__left-section__notes-list__note-item__top__delete">
+                <img src="/bin.svg" alt="A bin icon" class="app__left-section__notes-list__note-item__top__delete__icon"></img>
+            </div>
+            </div>
+            <div
+              class="app__left-section__notes-list__note-item__snippet"
+            >Test description</div>
+            <div class="app__left-section__notes-list__note-item__date">Thurs, 03, 2022</div>
+          </div>
+          <div class="app__left-section__notes-list__note-item">
+            <div class="app__left-section__notes-list__note-item__top">
+              <div class="app__left-section__notes-list__note-item__top__title">Test title</div>
+              <div class="app__left-section__notes-list__note-item__top__delete">
+                <img src="/bin.svg" alt="A bin icon" class="app__left-section__notes-list__note-item__top__delete__icon"></img>
+            </div>
+            </div>
+            <div
+              class="app__left-section__notes-list__note-item__snippet"
+            >Test description</div>
+            <div class="app__left-section__notes-list__note-item__date">Thurs, 03, 2022</div>
+          </div>
+        </aside>
+      </section>
+      <section class="app__right-section">
+        <div class="app__right-section__note">
+          <input
+            class="app__right-section__note__title"
+            type="text"
+            placeholder="Enter a title..."
+          />
+          <textarea
+            class="app__right-section__note__description"
+            placeholder="Enter a description..."
+          ></textarea>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

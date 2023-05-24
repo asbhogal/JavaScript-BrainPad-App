@@ -1,0 +1,76 @@
+@use "../_partials/variables" as *;
+
+.app {
+  display: flex;
+  &__left-section,
+  &__right-section {
+    @extend .app;
+    flex-direction: column;
+  }
+  &__left-section {
+    gap: 20px;
+    width: 320px;
+    padding: 20px;
+    border-right: 0.5px solid grey;
+    &__button {
+      padding: 10px 20px;
+      font-weight: 600;
+      border-radius: 10px;
+      border: none;
+      cursor: pointer;
+      transition: 0.3s all ease-in-out;
+      &:hover {
+        background-color: $azure;
+        color: $white;
+      }
+    }
+    &__notes-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      &__note-item {
+        @extend .app__left-section__notes-list;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        cursor: pointer;
+        padding: 10px;
+        &__top {
+          display: flex;
+          justify-content: space-between;
+          &__delete {
+            display: flex;
+            &__icon {
+              display: flex;
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+        &__date {
+          text-align: right;
+          font-style: italic;
+        }
+      }
+    }
+  }
+  &__right-section {
+    flex-grow: 1;
+    &__note {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      padding: 20px;
+      &__title,
+      &__description {
+        outline: none;
+        border: none;
+      }
+      &__title {
+        font-size: 46px;
+      }
+      &__description {
+        font-size: 24px;
+      }
+    }
+  }
+}
