@@ -1,5 +1,28 @@
-@media only screen and (width <= 768px) {
+@media only screen and (width <= 956px) {
   .app {
     flex-direction: column-reverse;
+    &__left-section {
+      width: 100%;
+      &__notes-list {
+        flex-direction: row;
+        overflow-x: scroll;
+        &__note-item {
+          &__snippet {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (width >= 957px) {
+  .app {
+    &__left-section {
+      width: 320px;
+      &__notes-list {
+        flex-direction: column;
+      }
+    }
   }
 }
