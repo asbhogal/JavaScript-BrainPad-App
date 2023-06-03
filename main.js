@@ -1,9 +1,9 @@
 import "/src/styles/index.scss";
-import notesAPI from "./src/js/notesAPI";
+import NotesAPI from "./src/js/notesAPI";
 
-notesAPI.saveNotes({
+NotesAPI.saveNote({
   title: "New note",
   body: "New note text",
 });
 
-console.log(notesAPI.getAllNotes());
+console.log(NotesAPI.getAllNotes());
